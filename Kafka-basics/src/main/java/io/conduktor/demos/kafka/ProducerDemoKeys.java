@@ -25,7 +25,7 @@ public class ProducerDemoKeys {
         KafkaProducer<String, String> producer = new KafkaProducer<>(properties);
 
         for (int x = 0; x < 3; x++) {
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 100; i++) {
                 String key = "id-" + i;
                 String value = "This is Kafka message: " + i;
 
